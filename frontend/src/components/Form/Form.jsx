@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 import axios from "axios";
 import "./style.css";
+
 const Form = () => {
   const [person, setPerson] = useState({ name: "", email: "", password: "" });
   const [people, setPeople] = useState([]);
@@ -130,21 +131,26 @@ const Form = () => {
         <div className="user-list">
           {people.map((user) => {
             return (
-              <section className="user" key={user._id}>
+              <section className="users" key={user._id}>
                 <div>
-                  <h1>{user.name}</h1>
-                  <p>{user.email}</p>
-
-                  <div className="all-btn">
-                    <button
-                      onClick={() => {
-                        deleteUser(user._id);
-                      }}
-                    >
-                      delete
-                    </button>
-                    <button>update</button>
-                    <button>View</button>
+                  <div className="user">
+                    <h1>{user.name}</h1>
+                    <p>{user.email}</p>
+                    <div className="all-btn">
+                      <button
+                        onClick={() => {
+                          deleteUser(user._id);
+                        }}
+                      >
+                        <Link>Delete</Link>
+                      </button>
+                      <button>
+                        <Link to="/updateuser">Update</Link>{" "}
+                      </button>
+                      <button>
+                        <Link to="/view">View</Link>{" "}
+                      </button>
+                    </div>
                   </div>
                 </div>
               </section>

@@ -110,9 +110,9 @@ ul li a {
     overflow: hidden;
     background-color: var(--bg-color);
     /* background-color: #ff2fff; */
-
+    left: -1px;
     transition: 0.2s ease-in-out all;
-    width: 97%;
+    width: 100%;
     margin: auto;
   }
   .links ul {

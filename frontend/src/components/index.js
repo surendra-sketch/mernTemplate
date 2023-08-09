@@ -5,3 +5,6 @@ export { default as Footer } from "./Footer/Footer";
 export { default as Work } from "./work/Work";
 export { default as Update } from "./Update/Update";
 export { default as Error } from "./Error/Error";
+export { default as ViewUser } from "./UserAcs/ViewUser";
+export { default as UpdateUser } from "./UserAcs/UpdateUser";
+export { default as ShowData } from "./FetchAPI/Showdata";

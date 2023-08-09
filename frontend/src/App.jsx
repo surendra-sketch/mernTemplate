@@ -1,6 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Footer, HeroSection, Navbar, Update, Work, Error } from "./components";
+import {
+  Footer,
+  HeroSection,
+  Navbar,
+  Update,
+  Work,
+  Error,
+  ViewUser,
+  UpdateUser,
+} from "./components";
 
 import "./app.css";
 const App = () => {
@@ -16,6 +25,8 @@ const App = () => {
               <Route exact path="/" element={<HeroSection />} />
               <Route exact path="/update" element={<Update />} />
               <Route exact path="/work" element={<Work />} />
+              <Route exact path="/view" element={<ViewUser />} />
+              <Route exact path="/updateuser" element={<UpdateUser />} />
               <Route path="/*" element={<Error />} />
             </Routes>
           </section>
