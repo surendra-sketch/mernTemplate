@@ -1,0 +1,12 @@
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+}
+.base-style {
+  padding-top: 70px;
+  width: 90%;
+  margin: auto;
+}

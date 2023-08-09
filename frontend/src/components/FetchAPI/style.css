@@ -1,0 +1,105 @@
+.user1-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  margin: 2rem 0rem 5rem 0rem;
+}
+
+.user1 {
+  border: 1px solid var(--heading-color);
+  /* box-shadow: inset 0px 0px 10px 5px #56f3; */
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  max-height: 400px;
+  border: 1px solid var(--heading-color);
+  /* margin: auto; */
+  /* border: #b6028f 2px solid; */
+  border: #56f6 2px solid;
+  border-radius: 7px;
+  margin: 5px 0px;
+  background-color: #b602;
+  background-color: #56f3;
+
+  padding: 2rem;
+}
+.user1 div {
+  /* background-color: #fff; */
+  text-align: initial;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--heading-color);
+  box-shadow: 0px 0px 10px 5px #56f3;
+  object-fit: cover;
+}
+
+.user1 h2 {
+  font-size: 1.2rem;
+}
+.user1 h3 {
+  font-size: 1rem;
+  color: #56ff;
+}
+
+.all-btn {
+  /* cursor: pointer; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.all-btn button::before {
+  position: relative;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  left: -1px;
+  top: -6px;
+  transform: translate(-50%, -50%);
+}
+
+.delete:hover::before {
+  content: "Delete ";
+}
+
+.edit:hover::before {
+  content: "Edit ";
+}
+
+.view:hover::before {
+  content: "View ";
+}
+.all-btn button {
+  color: #000;
+  border: none;
+  outline: none;
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+}
+.all-btn button span {
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .user1 {
+    width: 100%;
+    flex-direction: column;
+  }
+  .user1 .user-data {
+    border: none;
+  }
+  .user1 .all-btn {
+    width: 70%;
+
+    margin: auto;
+    margin-top: 1.5rem;
+    border: none;
+    color: #0000;
+    flex-direction: row;
+  }
+}

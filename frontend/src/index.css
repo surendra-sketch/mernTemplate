@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #299efd;
+  --text-color: #1f1d1d;
+  --heading-color: #04349b;
+}
+
+body {
+  font-family: "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  background-color: black;
+  color: aqua;
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+
+hr {
+  visibility: inherit;
+
+  color: #1f1d1d;
+}
+.main-rootlayout {
+  background-position: relative;
+  min-height: 100vh;
+  background-color: #f1fbff;
+}

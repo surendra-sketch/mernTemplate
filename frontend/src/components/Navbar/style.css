@@ -1,0 +1,135 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: var(--bg-color);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  z-index: 999;
+}
+.logo-text {
+  /* background-color: #f5d; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.logo {
+  padding: 2px;
+}
+.logo-text .logo {
+  width: 70px;
+  height: 70px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.logo-text .text {
+  padding-left: 0.4rem;
+}
+.logo-text .text p {
+  font-size: 1.4rem;
+  /* color: var(--heading-color); */
+  /* background: linear-gradient(to right, rgba(255, 0, 0, 1), #033dfd); */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: #ffffff;
+}
+
+.logo-text .text span {
+  color: #ffffff;
+
+  font-size: 0.7rem;
+}
+
+.links {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links ul {
+  display: flex;
+  justify-content: space-around;
+}
+.links ul li {
+  text-decoration: none;
+  margin: 1px;
+}
+
+ul li a {
+  padding: 8px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-btn {
+  display: none;
+}
+.nav-btn button {
+  background-color: transparent;
+}
+@media screen and (max-width: 319px) {
+  .navbar {
+    background-color: #f80606;
+  }
+  .logo-text .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+  .logo-text .text p {
+    font-size: 1rem;
+  }
+  .logo-text .text span {
+    font-size: 0.1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-btn {
+    display: block;
+  }
+  .links {
+    position: absolute;
+    height: 0%;
+    top: 70px;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    /* left: -400px; */
+    overflow: hidden;
+    background-color: var(--bg-color);
+    /* background-color: #ff2fff; */
+
+    transition: 0.2s ease-in-out all;
+    width: 97%;
+    margin: auto;
+  }
+  .links ul {
+    line-height: 3rem;
+    /* background-color: #ff0303; */
+    width: 100%;
+    flex-direction: column;
+  }
+  .links ul li {
+    transition: 0.5s linear;
+  }
+
+  .links ul li:hover {
+    background-color: var(--bg-color);
+    background-color: #84c2fc;
+  }
+  .links ul li a:hover {
+    color: #fff;
+  }
+}
