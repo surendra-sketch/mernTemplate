@@ -8,6 +8,7 @@
   align-items: center;
   padding: 0px 10px;
   z-index: 999;
+  box-shadow: 1px 1px 4px 2px#fff;
 }
 .logo-text {
   /* background-color: #f5d; */
@@ -121,7 +122,7 @@ ul li a {
   }
   .navbar {
     /* border-bottom: 2px solid #ffffff; */
-    box-shadow: 1px 1px 4px 2px#fff;
+    /* box-shadow: 1px 1px 4px 2px#fff; */
   }
   .links {
     position: absolute;
